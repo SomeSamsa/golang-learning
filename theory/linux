@@ -1,0 +1,37 @@
+Notes about Linux - short summary 
+
+1.History
+1969 Ken Thompson and Dennis Ritchie developed the UNIX operating system(later written in C). GNU is a Unix-like operation system(GNU's Not Unix). Kernel the most important part which allows the hardware to talk to software. In 1991 Linus Torvalds started developing what we now know today as the Linux kernel.
+
+2.Linux Distribution
+The term Linux actually refers to the Linux kernel. However, many distributions use the Linux kernel so therefore are commonly known as Linux operating systems. A Linux consists of hardware, linux kernal and user space.
+DEBIAN has been in development for over 20 years. Has stable, testig and unstable branches. Uses Debian package management tools.
+RED HAT ENTERPRISE LINUX(RHEL) uses RPM package manager. If you need a solid server OS this would be a good one.
+UBUNTU is a Debian-based operating system.
+FEDORA is upstream RHEL operating system. Uses Red Hat package manager and Red Hat based operating system.
+LINUX MINT uses the Debian package manager and has great interface for beginners.
+GENTOO offers ridiculous flexibility with the operating system.Portage package management. For advanced users.
+ARCH LINUX hard, but you will get complete control of your system. Pacman package manager.(driven 100% by community)
+openSUSE is the second oldest still running Linux Distributions. Uses RPM package manager.
+
+3.Command line
+ The shell is basically a program that takes your commands from the keyboard and sends them to the operating system to perform.
+pwd (Print Working Directory). Everything in Linux is a file.
+cd (Change Directory). There are two different ways to specify a path: Absolute path is the path from the root directory and Relative path is the path from where you are currently in filesystem. . (current directory) .. (parent directory) ~ (home directory) - (previous directory).
+ls (List Directories). Filenames that start with . are hidden,pass the -a flag to ls (a for all).-l for long, this shows a detailed list of files in a long format. ls -R: recursively list directory contents, ls -r: reverse order while sorting, ls -t: sort by modification time, newest first.
+touch allows you to the create new empty files. Changes time of already existing file if touched.
+file is dertermining the type of a file.
+cat diplays file contents and can combine multiple files and show you the output of them. Meant for short content.
+less is a pager program used to read large files without opening them in editor. Use the following command to navigate through less: q - Used to quit out of less and go back to your shell. Page up, Page down, Up and Down - Navigate using the arrow keys and page keys. g - Moves to beginning of the text file.G - Moves to the end of the text file.
+/search - You can search for specific text inside the text document. Prefacing the words you want to search with / h - If you need a little help about how to use less while you’re in less, use help.
+history shows previously entered commands.
+!! runs the last command you ran.
+ctrl-R. After this type the parts of the command you want to find and it will show matches.
+clear clears terminal.
+Tab button is autocomplete.
+cp (Copy). For example: cp my /home/pete/Documents/cool You are coping my to cool; cp *.jpg /home/pete/pic You are copy all jpg files to pic directory; cp -r Pumpkin/ /home/pete/Doc helps to copy the files and directories with their contents; cp -i my /home/pete/Pic promts you before overwriting a file in case of the same filenames.
+mv (Move). For example: mv oldfile newfile (renaming file oldfile to newfile and can do the same with directories); mv file /home/pete/Doc (moves fiel to another directory and you can also move more than one file); mv -b directory1 directory2(making backup in case if you do not want a file to overwrite the previous one and old version will stay the same just with ~ sigh)
+mkdir (Make Directory) creates directory if if doesnt alreadu exist, you can do multiple at the same time. -p for making subdirectories.
+rm (Remove). rm -f removes no looking to the protection. rm -i interactivly. rm -r removes any subdirectories it may have. rmdir removes directory.
+find. Specify the directory and the name of file like this find /home -name puppies.jpg. With -type you can specify the type of the file like d is for directory. 
+help {name of the command} and it will give you desctiption.
