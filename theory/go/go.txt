@@ -1,4 +1,4 @@
-~Goroutines~
+~Goroutines~ <https://medium.com/@jamal.kaksouri/goroutines-in-golang-understanding-and-implementing-concurrent-programming-in-go-600187bcfaa2#:~:text=Goroutines%20are%20a%20lightweight%20form,followed%20by%20a%20function%20call.>
 It can be used to run multiple tasks simultaneously in one program. They are created by "go" keywords. They are essential for concurrency of the program.
 Channels are used to communicate between goroutines.Channels are created using the ‘make’ function. They can be used to send and receive data between Goroutines.
 ~Defer, panic and recover~

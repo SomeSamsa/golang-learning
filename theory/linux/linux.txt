@@ -1,4 +1,4 @@
-Notes about Linux - short summary 
+Notes about Linux - short summary <https://linuxjourney.com/>
 
 1.History
 1969 Ken Thompson and Dennis Ritchie developed the UNIX operating system(later written in C). GNU is a Unix-like operation system(GNU's Not Unix). Kernel the most important part which allows the hardware to talk to software. In 1991 Linus Torvalds started developing what we now know today as the Linux kernel.
