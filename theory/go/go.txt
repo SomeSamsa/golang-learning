@@ -1,0 +1,5 @@
+~Goroutines~
+It can be used to run multiple tasks simultaneously in one program. They are created by "go" keywords. They are essential for concurrency of the program.
+Channels are used to communicate between goroutines.Channels are created using the ‘make’ function. They can be used to send and receive data between Goroutines.
+~Defer, panic and recover~
+Defer statement pushes function onto list that will return after all surrounding funciton will return. The deferred function will have vars that were before, after it is evaluated no matter how var changed. Deferred function calls are LIFO. Deferred functions can access and modify the named return values of the function before it returns. Panic is a built-in function that stops normal execution and propagates an error up the call stack, executing deferred functions along the way, while recover is used inside deferred functions to catch the panic and resume normal execution. They are need to controll the flow of the program.
