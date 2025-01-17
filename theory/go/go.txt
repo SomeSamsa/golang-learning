@@ -3,3 +3,9 @@ It can be used to run multiple tasks simultaneously in one program. They are cre
 Channels are used to communicate between goroutines.Channels are created using the ‘make’ function. They can be used to send and receive data between Goroutines.
 ~Defer, panic and recover~
 Defer statement pushes function onto list that will return after all surrounding funciton will return. The deferred function will have vars that were before, after it is evaluated no matter how var changed. Deferred function calls are LIFO. Deferred functions can access and modify the named return values of the function before it returns. Panic is a built-in function that stops normal execution and propagates an error up the call stack, executing deferred functions along the way, while recover is used inside deferred functions to catch the panic and resume normal execution. They are need to controll the flow of the program.
+
+Arrays / slices <https://go.dev/blog/slices-intro>
+Go’s arrays are values. An array variable denotes the entire array; it is not a pointer to the first array element (as would be the case in C). 
+array : [2]type
+slice : []type
+slice is a dynamic, flexible view into an underlying array. It has a length (the number of elements it contains) and a capacity (the number of elements it can hold before needing to grow). Slices are used to manage sequences of elements, allowing easy manipulation like resizing, appending, and slicing without directly handling arrays.
